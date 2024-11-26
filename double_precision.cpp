@@ -106,6 +106,11 @@ int main(){
             break;
         }
 
+        if (input.length() > 20) {
+            cout << "The input length is too long." << endl;
+            continue;
+        }
+
         double number = extractNumeric(input);
 
         if (number != -999999.99) {
